@@ -38,7 +38,8 @@ Esse projeto está sob a licença MIT.
 
 <p align="center">Feito com  ♥  by Alex Lima</p>
 
-Você pode acessar o website do projeto através [DESSE LINK](https://alima07.github.io/rocketseat-stage3-CSS-avancado-mobile-first).
+<p align="center">Você pode acessar o website do projeto através [DESSE LINK](https://alima07.github.io/rocketseat-stage3-CSS-avancado-mobile-first).</p>
+
 
 
 
