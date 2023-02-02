@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%; /*10px*/
+  --bc-body: #ffffff;
+  --bc-header: #8e9aaf;
+  --bc-title: #cbc0d3;
+  --bc-main: #eff1ff;
+  --bc-figcaption: #feeafa;
+  --ff-header: "Staatliches", "cursive";
+  --ff-main: "Palanquin", "sans-serif";
+  --fc-header: #ffffff;
+  --fc-main: #23053a;
+  --fc-figcaption: #4a4e69;
+}
+
+body {
+  background-color: var(--bc-main);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background-color: var(--bc-header);
+  width: 100%;
+  height: 27.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header img {
+  margin: 3.2rem 0 3.2rem;
+}
+
+header h1 {
+  background-color: var(--bc-title);
+  width: 100%;
+  height: 4.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--ff-header);
+  font-weight: 400;
+  font-size: 4rem;
+  letter-spacing: 0.05em;
+  color: var(--fc-header);
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+main {
+  background-color: var(--bc-main);
+  width: 38.4rem;
+}
+
+main div {
+  margin: 1.4rem 3.2rem 6rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main p {
+  font-family: var(--ff-main);
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  text-align: center;
+  color: var(--fc-main);
+  margin-bottom: 6.3rem;
+}
+
+.iceCream {
+  position: relative;
+  margin-bottom: 3.2rem;
+  animation-name: ice-cream-downTop;
+  animation-duration: 1s;
+}
+
+.iceCream img {
+  width: 32rem;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.iceCream figcaption {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  background-color: var(--bc-figcaption);
+  border-radius: 2rem;
+  width: 11.2rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--fc-figcaption);
+  font-family: var(--ff-header);
+  font-weight: 400;
+  font-size: 2rem;
+  text-transform: uppercase;
+  animation-name: ice-cream-topDown;
+  animation-duration: 1.8s;
+}
+
+#iceCream-last {
+  margin-bottom: 0;
+}
+
+@keyframes ice-cream-downTop {
+  0% {
+    opacity: 0;
+    transform: translateY(5.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+@keyframes ice-cream-topDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-5.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
